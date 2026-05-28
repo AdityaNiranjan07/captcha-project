@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f1a;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.container {
+  background: #1a1a2e;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 40px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.2);
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  color: #a78bfa;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 28px;
+}
+
+.captcha-box {
+  background: #0f0f1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#captcha-img {
+  image-rendering: pixelated;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  filter: invert(1);
+}
+
+#refresh-btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #aaa;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+#refresh-btn:hover {
+  border-color: #a78bfa;
+  color: #a78bfa;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 16px;
+  background: #0f0f1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 6px;
+  text-align: center;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #a78bfa;
+}
+
+#submit-btn {
+  padding: 12px 20px;
+  background: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#submit-btn:hover {
+  background: #6d28d9;
+}
+
+.message {
+  font-size: 1rem;
+  min-height: 24px;
+  font-weight: 500;
+}
+
+.message.success { color: #34d399; }
+.message.error   { color: #f87171; }

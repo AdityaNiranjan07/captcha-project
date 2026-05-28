@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI CAPTCHA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>CAPTCHA Verification</h1>
+    <p class="subtitle">Enter the captcha shown below</p>
+
+    <!-- CAPTCHA IMAGE -->
+    <div class="captcha-box">
+      <img id="captcha-img" src="" alt="Loading CAPTCHA..." />
+    </div>
+
+    <!-- REFRESH BUTTON -->
+    <button id="refresh-btn" onclick="loadCaptcha()">🔄 Refresh CAPTCHA</button>
+
+    <!-- INPUT -->
+    <div class="input-group">
+      <input
+        type="text"
+        id="captcha-input"
+        placeholder="Enter the 5 digits"
+        maxlength="5"
+        autocomplete="off"
+      />
+      <button id="submit-btn" onclick="verifyCaptcha()">Verify</button>
+    </div>
+
+    <!-- RESULT MESSAGE -->
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
